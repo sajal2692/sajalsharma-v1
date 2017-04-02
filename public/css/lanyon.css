@@ -173,6 +173,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+/*Social icons in sidebar*/
+.social-icons {
+  text-align: center; 
+}
+
+.social-icons i {
+  padding-right: .7rem;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
