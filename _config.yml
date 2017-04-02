@@ -10,7 +10,7 @@ tagline:             'Data Scientist and Software Engineer.'
 description:         'The internet home of Sajal Sharma. Data Scientist. Software Engineer. Amateur Philosopher.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
-paginate:            2
+paginate:            1
 
 # About/contact
 author:
