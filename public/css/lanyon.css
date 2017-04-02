@@ -172,6 +172,16 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-item p:last-child {
   margin-bottom: 0;
 }
+.sidebar-item p {
+  font-size: .7rem;
+}
+.sidebar-item img {
+  border-radius: 100px;
+  height: auto;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Social icons in sidebar*/
 .social-icons {
@@ -180,6 +190,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-icons i {
   padding-right: .7rem;
+  color: rgba(255,255,255,.6)
+}
+.social-icons i:hover {
+  color: #fff;
 }
 
 /* Sidebar nav */
@@ -201,7 +215,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .sidebar-item {
-    padding: 1.5rem;
+    padding: 1.3rem;
   }
   .sidebar-nav-item {
     padding-left:  1.5rem;
@@ -242,7 +256,7 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #505050;
+  background-color: #313131;
 }
 
 .sidebar-toggle:active:before,
