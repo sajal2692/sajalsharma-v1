@@ -51,6 +51,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
+/*Homepage*/
+
+#typed-intro {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
 
 /*
  * Wrapper
@@ -112,6 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.masthead-subtitle {
+  color: #c0c0c0;
+  text-align: right;
 }
 
 @media (max-width: 48em) {
@@ -178,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-item img {
   border-radius: 100px;
   height: auto;
-  width: 7rem;
+  width: 6.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -587,4 +598,27 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/*Typed Cursor CSS*/
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
