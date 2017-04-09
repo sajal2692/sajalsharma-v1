@@ -342,7 +342,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
+/* Blog post or page title and subtitle */
 .page-title,
 .post-title,
 .post-title a {
@@ -352,6 +352,12 @@ a.sidebar-nav-item:focus {
 .post-title {
   margin-top: 0;
 }
+.page-title small {
+  font-size: 60%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}s
 
 /* Meta data line below post title */
 .post-date {
@@ -360,6 +366,12 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
+
+.page-subtext {
+  color: #c0c0c0;
+  font-size: 75%;
+}
+
 
 /* Related posts */
 .related {
