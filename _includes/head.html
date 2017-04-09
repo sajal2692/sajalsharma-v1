@@ -14,11 +14,35 @@
     {% endif %}
   </title>
 
+  
+
   <!-- CSS -->
+  <!-- Bootstrap: Alpha v4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  
+
+
+  <!-- TypedJS -->
+  <script src="/public/js/typed.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('#typed-intro', {
+      stringsElement: document.getElementById('typed-strings'),
+      startDelay: 2450,
+      typeSpeed: 20
+
+      // Add callback function when done.
+    });
+  });
+  </script>
+  
+
+
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
