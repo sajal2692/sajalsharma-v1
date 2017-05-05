@@ -25,6 +25,7 @@
  * Pagination
  * Reverse layout
  * Themes
+ * Cards
  */
 
 
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 44rem; /*Changed from 38rem*/
   }
 }
 
@@ -613,7 +614,7 @@ a.pagination-item:hover {
 }
 
 /*Typed Cursor CSS*/
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -633,4 +634,35 @@ a.pagination-item:hover {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+/*CSS for Bootstrap Cards*/
+
+/*.card {
+  margin-bottom: 1.5rem;
+  width: 20rem;
+}*/
+
+.card {
+  margin-bottom: 1.5rem;
+  width: 20rem;
+}
+
+.card img {
+  margin: 0px;
+}
+
+.card .btn {
+  font-size: .75rem;
+}
+
+.card-title {
+  font-weight: 750;
+  font-size: 1.1rem;
+  margin-bottom: .75rem;
+  margin-top: 0px;
+}
+
+.card-text {
+  font-size: .75rem;
 }
