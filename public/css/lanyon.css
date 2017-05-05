@@ -666,3 +666,8 @@ a.pagination-item:hover {
 .card-text {
   font-size: .75rem;
 }
+
+.card-footer {
+  font-size: .75rem;
+  padding-top: .5rem;
+}
