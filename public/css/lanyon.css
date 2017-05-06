@@ -674,3 +674,10 @@ a.pagination-item:hover {
   font-size: .75rem;
   padding-top: .5rem;
 }
+
+
+/*CSS For Resume page*/
+#resume-download {
+  margin-top: 1rem;
+  text-align: center;
+}
