@@ -14,8 +14,11 @@
     {% endif %}
   </title>
 
-  
-
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ 
   <!-- CSS -->
   <!-- Bootstrap: Alpha v4 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -30,15 +33,32 @@
   <!-- TypedJS -->
   <script src="/public/js/typed.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function(){
-    Typed.new('#typed-intro', {
-      stringsElement: document.getElementById('typed-strings'),
-      startDelay: 2000,
-      typeSpeed: 15
 
-      // Add callback function when done.
+document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('#typed-intro', {
+      strings: ["Hi, there! ^1000 I'm Sajal. ^1200 <br> ^200<br> ^200 \
+      A Master of Information Technology graduate from The University of Melbourne, Australia. ^1200 <br> ^200<br> ^200 \
+      A Software Engineer with expertise in Data Science technologies. ^1200 <br> ^200<br> ^200 \
+      I'm passionate about using data to "],
+      startDelay: 2000,
+      typeSpeed: 6,
+      callback: function() {
+        $(".typed-cursor").hide();
+        introEnd();
+      }
     });
   });
+
+  function introEnd() {
+    Typed.new('#intro-end', {
+      // stringsElement: document.getElementById('typed-strings'),
+      strings: ["help us better understand the world.","extract decision making insight.","help machines learn.","make the world a better place."],
+      backDelay: 1500,
+      typeSpeed: 6,
+      backSpeed: 6
+    });
+  }
+
   </script>
 
   
