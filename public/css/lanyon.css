@@ -681,3 +681,16 @@ a.pagination-item:hover {
   margin-top: 1rem;
   text-align: center;
 }
+
+
+/*CSS for HomePage*/
+/*#typed-strings a {
+  color: #003366;
+}*/
+
+
+#scroll-down {
+  display: none;
+  margin-top: 14rem;
+  text-align: center;
+}

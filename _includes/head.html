@@ -36,10 +36,11 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('#typed-intro', {
-      strings: ["Hi, there! ^1000 I'm Sajal. ^1200 <br> ^200<br> ^200 \
-      A Master of Information Technology graduate from The University of Melbourne, Australia. ^1200 <br> ^200<br> ^200 \
-      A Software Engineer with expertise in Data Science technologies. ^1200 <br> ^200<br> ^200 \
-      I'm passionate about using data to "],
+      stringsElement: document.getElementById('typed-strings'),
+      // strings: ["Hi, there! ^1000 I'm Sajal. ^1200 <br> ^200<br> ^200 \
+      // A Master of Information Technology graduate from The University of Melbourne, Australia. ^1200 <br> ^200<br> ^200 \
+      // A Software Engineer with expertise in Data Science technologies. ^1200 <br> ^200<br> ^200 \
+      // I'm passionate about using data to "],
       startDelay: 2000,
       typeSpeed: 6,
       callback: function() {
@@ -51,11 +52,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function introEnd() {
     Typed.new('#intro-end', {
-      // stringsElement: document.getElementById('typed-strings'),
-      strings: ["help us better understand the world.","extract decision making insight.","help machines learn.","make the world a better place."],
+      strings: ["understand cause and effect.","extract decision making insight.","help machines learn.","make the world a better place."],
       backDelay: 1500,
       typeSpeed: 6,
-      backSpeed: 6
+      backSpeed: 6,
+      callback: function() {
+        $('#scroll-down').show();
+        $('#scroll-down i').addClass('animated fadeInLeft');
+        // $('#scroll-down').addClass('pulse');
+      }
     });
   }
 
@@ -74,7 +79,11 @@ document.addEventListener('DOMContentLoaded', function(){
   <!-- Holder.js Image Placeholders -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
 
-  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
