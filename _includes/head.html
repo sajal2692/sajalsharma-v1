@@ -58,11 +58,28 @@ document.addEventListener('DOMContentLoaded', function(){
       backSpeed: 6,
       callback: function() {
         $('#scroll-down').show();
-        $('#scroll-down i').addClass('animated fadeInLeft');
+        $('#scroll-down i').addClass('animated fadeIn');
+        $(".post-intro-section").show()
+        $(".post-intro-section").addClass('animated fadeIn')
         // $('#scroll-down').addClass('pulse');
       }
     });
   }
+
+  </script>
+
+  <!-- Animations -->
+  <script>
+  $.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+  });
+
+  $('#scroll-down i').animateCss('bounce');
 
   </script>
 

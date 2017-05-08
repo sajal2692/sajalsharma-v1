@@ -684,13 +684,23 @@ a.pagination-item:hover {
 
 
 /*CSS for HomePage*/
-/*#typed-strings a {
-  color: #003366;
-}*/
+#typed-intro a {
+  color: #214F80;
+}
+
+.post-intro-section {
+  display: none;
+  margin-top: 4rem;
+}
 
 
 #scroll-down {
   display: none;
-  margin-top: 14rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+  /*position: fixed;*/
+  /*bottom: 0px;*/
+  color: #c0c0c0;
   text-align: center;
 }
