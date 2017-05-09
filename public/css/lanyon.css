@@ -689,8 +689,25 @@ a.pagination-item:hover {
 }
 
 .post-intro-section {
-  display: none;
+  /*display: none;*/
   margin-top: 4rem;
+}
+
+/*Skills section*/
+#skills img {
+  width: 10rem;
+  display: inline;
+  max-width: 8rem;
+}
+
+#skills h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#skills-typed {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 
@@ -700,7 +717,7 @@ a.pagination-item:hover {
   margin-top: 6rem;
   margin-bottom: 20rem;
   /*position: fixed;*/
-  /*bottom: 0px;*/
+  bottom: 0px;
   color: #c0c0c0;
   text-align: center;
 }
