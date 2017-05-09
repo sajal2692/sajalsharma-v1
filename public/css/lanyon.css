@@ -689,7 +689,7 @@ a.pagination-item:hover {
 }
 
 .post-intro-section {
-  /*display: none;*/
+  display: none;
   margin-top: 4rem;
 }
 
