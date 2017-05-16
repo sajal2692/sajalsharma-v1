@@ -1,4 +1,4 @@
-/*
+
  *  ___
  * /\_ \
  * \//\ \      __      ___   __  __    ___     ___
@@ -26,6 +26,7 @@
  * Reverse layout
  * Themes
  * Cards
+ * Media/Window triggers
  */
 
 
@@ -717,7 +718,19 @@ a.pagination-item:hover {
   margin-top: 6rem;
   margin-bottom: 20rem;
   /*position: fixed;*/
-  bottom: 0px;
   color: #c0c0c0;
   text-align: center;
+}
+
+#scroll-down i {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 2rem;
+}
+
+/*Media-Window triggers*/
+@media (max-height: 540px) {
+  #scroll-down {
+    display:none!important;
+  }
 }
