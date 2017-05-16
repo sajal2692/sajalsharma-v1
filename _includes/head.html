@@ -14,8 +14,11 @@
     {% endif %}
   </title>
 
-  
-
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ 
   <!-- CSS -->
   <!-- Bootstrap: Alpha v4 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -30,26 +33,75 @@
   <!-- TypedJS -->
   <script src="/public/js/typed.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function(){
+
+document.addEventListener('DOMContentLoaded', function(){
     Typed.new('#typed-intro', {
       stringsElement: document.getElementById('typed-strings'),
-      startDelay: 2450,
-      typeSpeed: 20
-
-      // Add callback function when done.
+      // strings: ["Hi, there! ^1000 I'm Sajal. ^1200 <br> ^200<br> ^200 \
+      // A Master of Information Technology graduate from The University of Melbourne, Australia. ^1200 <br> ^200<br> ^200 \
+      // A Software Engineer with expertise in Data Science technologies. ^1200 <br> ^200<br> ^200 \
+      // I'm passionate about using data to "],
+      startDelay: 2000,
+      typeSpeed: 6,
+      callback: function() {
+        $(".typed-cursor").hide();
+        introEnd();
+      }
     });
   });
+
+  function introEnd() {
+    Typed.new('#intro-end', {
+      strings: ["understand cause and effect.","extract decision making insight.","help machines learn.","make the world a better place."],
+      backDelay: 1500,
+      typeSpeed: 6,
+      backSpeed: 6,
+      callback: function() {
+        $('#scroll-down').show();
+        $('#scroll-down i').addClass('animated fadeInDown');
+        $(".post-intro-section").show()
+        // $(".post-intro-section").addClass('animated fadeIn')
+        // $('#scroll-down').addClass('pulse');
+      }
+    });
+  }
+
   </script>
+
+  <!-- Animations -->
+  <script>
+  $.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+  });
+
+  // $('#scroll-down i').animateCss('bounce');
+
+  </script>
+
   
-
-
-
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/public/favicon.png">
+  
+  
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/3b939aa255.js"></script>
 
+  
+  <!-- Holder.js Image Placeholders -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
 </head>

@@ -1,4 +1,4 @@
-/*
+
  *  ___
  * /\_ \
  * \//\ \      __      ___   __  __    ___     ___
@@ -25,6 +25,8 @@
  * Pagination
  * Reverse layout
  * Themes
+ * Cards
+ * Media/Window triggers
  */
 
 
@@ -88,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 44rem; /*Changed from 38rem*/
   }
 }
 
@@ -342,7 +344,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
+/* Blog post or page title and subtitle */
 .page-title,
 .post-title,
 .post-title a {
@@ -352,6 +354,12 @@ a.sidebar-nav-item:focus {
 .post-title {
   margin-top: 0;
 }
+.page-title small {
+  font-size: 60%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}s
 
 /* Meta data line below post title */
 .post-date {
@@ -360,6 +368,12 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
+
+.page-subtext {
+  color: #c0c0c0;
+  font-size: 75%;
+}
+
 
 /* Related posts */
 .related {
@@ -601,7 +615,7 @@ a.pagination-item:hover {
 }
 
 /*Typed Cursor CSS*/
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -621,4 +635,102 @@ a.pagination-item:hover {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+/*CSS for Bootstrap Cards*/
+
+/*.card {
+  margin-bottom: 1.5rem;
+  width: 20rem;
+}*/
+
+.card {
+  width: 20rem;
+}
+
+.card-deck {
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  margin: 0px;
+}
+
+.card .btn {
+  font-size: .75rem;
+}
+
+.card-title {
+  font-weight: 750;
+  font-size: 1.1rem;
+  margin-bottom: .75rem;
+  margin-top: 0px;
+}
+
+.card-text {
+  font-size: .75rem;
+}
+
+.card-footer {
+  font-size: .75rem;
+  padding-top: .5rem;
+}
+
+
+/*CSS For Resume page*/
+#resume-download {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/*CSS for HomePage*/
+#typed-intro a {
+  color: #214F80;
+}
+
+.post-intro-section {
+  display: none;
+  margin-top: 4rem;
+}
+
+/*Skills section*/
+#skills img {
+  width: 10rem;
+  display: inline;
+  max-width: 8rem;
+}
+
+#skills h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#skills-typed {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+#scroll-down {
+  display: none;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+  /*position: fixed;*/
+  color: #c0c0c0;
+  text-align: center;
+}
+
+#scroll-down i {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 2rem;
+}
+
+/*Media-Window triggers*/
+@media (max-height: 540px) {
+  #scroll-down {
+    display:none!important;
+  }
 }
