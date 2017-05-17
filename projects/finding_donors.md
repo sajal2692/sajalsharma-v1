@@ -1,7 +1,7 @@
 ---
 layout: notebook
 title: Finding Donors for Charity using Machine Learning
-skills: Supervised Machine Learning, Python, Scikit-learn
+skills: Python, Scikit-learn, Pandas, Seaborn
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/finding_donors/finding_donors.ipynb
 ---
@@ -321,7 +321,7 @@ In this section, we will investigate four different algorithms, and determine wh
 
 $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 \cdot precision \right) + recall} $$
 
-In particular, when $\beta = 0.5$, more emphasis is placed on precision. This is called the **F$_{0.5}$ score** (or F-score for simplicity).
+In particular, when \\(beta = 0.5\\), more emphasis is placed on precision.
 
 Looking at the distribution of classes (those who make at most \$50,000, and those who make more), it's clear most individuals do not make more than \$50,000. This can greatly affect **accuracy**, since we could simply say *"this person does not make more than \$50,000"* and generally be right, without ever looking at the data! Making such a statement would be called **naive**, since we have not considered any information to substantiate the claim. It is always important to consider the *naive prediction* for your data, to help establish a benchmark for whether a model is performing well. That been said, using that prediction would be pointless: If we predicted all people made less than \$50,000, *CharityML* would identify no one as donors. 
 
