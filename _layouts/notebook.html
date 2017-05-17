@@ -1,34 +1,25 @@
-<!DOCTYPE html>
-<html lang="en-us">
+---
+layout: default
+---
 
-  {% include head.html %}
+<div class="notebook">
+  <h1 class="notebook-title">{{ page.title }}</h1>
+  <span class="project-skills">Skills: {{ page.skills}}</span>
+  <!-- <a href={{}}>View on Github</a> -->
+  {{ content }}
+</div>
 
-  <body>
+<hr>
+<div class="back-to-top">
+<i class="fa fa-arrow-circle-up fa-2x animated infinite pulse" aria-hidden="true"></i>
+</div>
 
-    {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-        {{ content }}
-    </div>
-
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
-  </body>
-</html>
+<!-- Scroll back to top for notebooks -->
+  <script>
+    $(".back-to-top").click(function(){
+      console.log('hey jude');
+    $('body,html').animate({
+        scrollTop: 0
+    }, 2000);
+    });
+  </script>

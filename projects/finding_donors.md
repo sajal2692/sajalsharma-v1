@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: notebook
 title: Finding Donors for Charity using Machine Learning
+skills: Python
 ---
 
 
-# Supervised Learning Project: Finding Donors for *CharityML*
+<!-- # Supervised Learning Project: Finding Donors for *CharityML* -->
+
 
 This project was completed as a part of Udacity's Machine Learning Nanodegree.
 
