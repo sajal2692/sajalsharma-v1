@@ -742,6 +742,12 @@ a.pagination-item:hover {
 }
 
 /*Project Notebooks*/
+.project-skills {
+  color: #c0c0c0;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
 .dataframe {
   font-size: 0.75rem;
 }

@@ -4,7 +4,7 @@ layout: default
 
 <div class="notebook">
   <h1 class="notebook-title">{{ page.title }}</h1>
-  <span class="project-skills">Skills: {{ page.skills}}</span>
+  <div class="project-skills">Skills: {{ page.skills}}</div>
   <!-- <a href={{}}>View on Github</a> -->
   {{ content }}
 </div>
@@ -17,7 +17,6 @@ layout: default
 <!-- Scroll back to top for notebooks -->
   <script>
     $(".back-to-top").click(function(){
-      console.log('hey jude');
     $('body,html').animate({
         scrollTop: 0
     }, 2000);

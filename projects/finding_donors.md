@@ -1,7 +1,7 @@
 ---
 layout: notebook
 title: Finding Donors for Charity using Machine Learning
-skills: Python
+skills: Supervised Machine Learning, Python, Scikit-learn
 ---
 
 
