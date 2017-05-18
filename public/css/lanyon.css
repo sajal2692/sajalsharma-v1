@@ -25,7 +25,7 @@
  * Pagination
  * Reverse layout
  * Themes
- * Cards
+ * Cards & Portfolio
  * Media/Window triggers
  * Project Notebooks
  */
@@ -643,7 +643,7 @@ a.pagination-item:hover {
   100% { opacity:1; }
 }
 
-/*CSS for Bootstrap Cards*/
+/*Cards*/
 
 /*.card {
   margin-bottom: 1.5rem;
@@ -664,12 +664,14 @@ a.pagination-item:hover {
 
 .card .btn {
   font-size: .75rem;
+  margin-right: .75em;
+  margin-bottom: .75em;
 }
 
 .card-title {
   font-weight: 750;
   font-size: 1.1rem;
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   margin-top: 0px;
 }
 
@@ -677,11 +679,29 @@ a.pagination-item:hover {
   font-size: .75rem;
 }
 
+.card-buttons {
+
+}
+
 .card-footer {
   font-size: .75rem;
   padding-top: .5rem;
 }
 
+.list-group-item p {
+  font-size: 0.9em;
+}
+
+.list-group-item div a {
+  align-self: center;
+}
+
+/*.list-group-item a {
+  font-size: .7rem;
+  text-align: right;
+  display: block;
+  margin-top: 0.25em;
+}*/
 
 /*CSS For Resume page*/
 #resume-download {
