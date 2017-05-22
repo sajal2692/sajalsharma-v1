@@ -66,16 +66,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #home-menu {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
-#home-menu h2 {
+
+.hm-item a {
+  text-align: center;
   color: #c0c0c0;
 }
 
-#home-menu h2:hover {
-  cursor: pointer;
+.hm-item a:hover {
   color: #292b2c;
+  text-decoration: none;
+}
+
+.hm-item span {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 /*
