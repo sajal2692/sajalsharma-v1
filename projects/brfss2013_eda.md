@@ -3,7 +3,7 @@ layout: notebook
 title: Behavioral Risk Factor Surveillance System 2013 Exploratory Data Analysis
 skills: Descriptive Statistics, R, ggplot, dplyr
 external_type: RPubs
-external_url: https://rpubs.com/sajal_sharma/brfss2013
+external_url: http://rpubs.com/sajal_sharma/brfss2013
 ---
 ---
 
