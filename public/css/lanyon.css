@@ -80,10 +80,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.hm-item a:focus {
+  text-decoration: none;
+}
+
 .hm-item span {
   margin-top: 1rem;
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 /*
