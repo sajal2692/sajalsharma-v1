@@ -1,7 +1,7 @@
 ---
 layout: notebook
 title: Finding Donors for Charity using Machine Learning
-skills: Python, Scikit-learn, Pandas, Seaborn
+skills: Python, Scikit-learn, Decision Trees, SVM, Adaboost
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/finding_donors/finding_donors.ipynb
 ---

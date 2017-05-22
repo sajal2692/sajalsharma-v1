@@ -680,7 +680,8 @@ a.pagination-item:hover {
 }
 
 .card-buttons {
-
+  padding-left: 1.25rem;
+  padding-bottom: .5rem;
 }
 
 .card-footer {
@@ -689,19 +690,18 @@ a.pagination-item:hover {
 }
 
 .list-group-item p {
-  font-size: 0.9em;
+  font-size: 0.85em;
+  margin-bottom: 0.8rem;
 }
 
 .list-group-item div a {
   align-self: center;
 }
 
-/*.list-group-item a {
-  font-size: .7rem;
-  text-align: right;
-  display: block;
-  margin-top: 0.25em;
-}*/
+.list-group-skills {
+  margin-bottom: 0rem;
+  color: #c0c0c0;
+}
 
 /*CSS For Resume page*/
 #resume-download {
