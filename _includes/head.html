@@ -68,16 +68,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
   </script>
 
+
+
   <!-- Animations -->
   <script>
-  $.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-  });
+  // $.fn.extend({
+  //   animateCss: function (animationName) {
+  //       var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  //       this.addClass('animated ' + animationName).one(animationEnd, function() {
+  //           $(this).removeClass('animated ' + animationName);
+  //       });
+  //   }
+  // });
 
   // $('#scroll-down i').animateCss('bounce');
 
@@ -87,19 +89,15 @@ document.addEventListener('DOMContentLoaded', function(){
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/public/favicon.png">
-  
-  
+    
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/3b939aa255.js"></script>
-
   
   <!-- Holder.js Image Placeholders -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">

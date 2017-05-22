@@ -1,5 +1,5 @@
 
- *  ___
+ /*  ___
  * /\_ \
  * \//\ \      __      ___   __  __    ___     ___
  *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
@@ -25,8 +25,9 @@
  * Pagination
  * Reverse layout
  * Themes
- * Cards
+ * Cards & Portfolio
  * Media/Window triggers
+ * Project Notebooks
  */
 
 
@@ -59,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
+#hello-world {
+  height: 100vh;
+}
+
 
 /*
  * Wrapper
@@ -82,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 28rem;
+  font-size: 0.875rem;
 }
 @media (min-width: 38em) {
   .container {
@@ -637,7 +643,7 @@ a.pagination-item:hover {
   100% { opacity:1; }
 }
 
-/*CSS for Bootstrap Cards*/
+/*Cards*/
 
 /*.card {
   margin-bottom: 1.5rem;
@@ -658,12 +664,14 @@ a.pagination-item:hover {
 
 .card .btn {
   font-size: .75rem;
+  margin-right: .75em;
+  margin-bottom: .75em;
 }
 
 .card-title {
   font-weight: 750;
   font-size: 1.1rem;
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   margin-top: 0px;
 }
 
@@ -671,11 +679,29 @@ a.pagination-item:hover {
   font-size: .75rem;
 }
 
+.card-buttons {
+  padding-left: 1.25rem;
+  padding-bottom: .5rem;
+}
+
 .card-footer {
   font-size: .75rem;
   padding-top: .5rem;
 }
 
+.list-group-item p {
+  font-size: 0.85em;
+  margin-bottom: 0.8rem;
+}
+
+.list-group-item div a {
+  align-self: center;
+}
+
+.list-group-skills {
+  margin-bottom: 0rem;
+  color: #c0c0c0;
+}
 
 /*CSS For Resume page*/
 #resume-download {
@@ -685,6 +711,10 @@ a.pagination-item:hover {
 
 
 /*CSS for HomePage*/
+#typed-intro {
+  font-size: 1rem;
+}
+
 #typed-intro a {
   color: #214F80;
 }
@@ -733,4 +763,24 @@ a.pagination-item:hover {
   #scroll-down {
     display:none!important;
   }
+}
+
+/*Project Notebooks*/
+.project-skills {
+  color: #c0c0c0;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.dataframe {
+  font-size: 0.75rem;
+}
+
+.back-to-top {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.back-to-top i {
+  cursor: pointer;
 }
