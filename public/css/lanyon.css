@@ -680,7 +680,8 @@ a.pagination-item:hover {
 }
 
 .card-buttons {
-
+  padding-left: 1.25rem;
+  padding-bottom: .5rem;
 }
 
 .card-footer {
