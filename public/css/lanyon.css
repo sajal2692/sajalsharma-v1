@@ -18,6 +18,7 @@
  * Contents
  *
  * Global resets
+ * Homepage
  * Masthead
  * Sidebar
  * Slide effect
@@ -64,6 +65,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
+#home-menu {
+  margin-top: 8rem;
+}
+
+#home-menu h2 {
+  color: #c0c0c0;
+}
+
+#home-menu h2:hover {
+  cursor: pointer;
+  color: #292b2c;
+}
 
 /*
  * Wrapper
