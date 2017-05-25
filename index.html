@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-home
 title: Home
 ---
 <div id="hello-world">
@@ -10,15 +10,99 @@ title: Home
        I'm passionate about using data to </p>
 </div>
 <span id="typed-intro"></span><i><span id="intro-end"></span></i>
+</div>
 
-<div id="scroll-down">
+
+<div id="home-menu" class="d-flex justify-content-around">
+<div class="hm-item"><a href="#">
+<div><i class="fa fa-code fa-2x" aria-hidden="true"></i>
+</div>
+<span>Skills<span>
+</a>
+</div>
+<div class="hm-item"><a target="_blank" href="/portfolio">
+<div><i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>
+</div>
+<span>Portfolio</span>
+</a>
+</div>
+<div class="hm-item"><a id="contactAn" href="#contactModal">
+<div><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></div>
+<span>Contact</span>
+</a>
+</div>
+<!-- <div>
+<h2>Blog</h2>
+</div> -->
+</div>
+
+
+<div id="contactModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="hm-modal close-contactModal"> 
+        <i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
+    </div>
+            
+    <div class="modal-content container content">
+    <!-- Form content -->
+    <form action="https://formspree.io/contact@sajalsharma.com"
+      method="POST">
+
+    <h2>Get in touch.</h2>
+    <p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
+    Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
+
+    <p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p> 
+  	
+  	<div class="form-group">
+  	<label for="inputName">Name</label>
+    <input class="form-control" type="text" id="inputName">
+	</div>
+  	<div class="form-group">
+    <label for="inputEmail">Email address</label>
+    <input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+  	</div>
+  	<div class="form-group">
+  	<label for="inputSubject">Subject</label>
+    <input class="form-control" name="_subject" type="text" id="inputSubject">
+	</div>
+  	<div class="form-group">
+    <label for="inputMessage">Message</label>
+    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+  	</div>
+  	<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+    	<!-- <form action="https://formspree.io/your@email.com"
+      	method="POST">
+    	<input type="text" name="name">
+    	<input type="email" name="_replyto">
+    	<input type="submit" value="Send">
+		</form> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="scroll-down">
 	<i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i>
-	<!-- scroll down -->
 </div>
-</div>
-
-
-<div class="post-intro-section" id="skills">
+</div> -->
+<!-- Old site intro -->
+<!-- <div class="post-intro-section" id="skills">
 <h2>Skills</h2>
 <hr>
 <h3>Data Science</h3>
@@ -31,9 +115,9 @@ title: Home
 <hr>
 <h3>Software Development</h3>
 <a href="" target="_blank"><img src="/public/skill-logos/html-css-logos.svg"></a>
-<a href="http://getbootstrap.com/" target="_blank"><img src="/public/skill-logos/bootstrap-logo.png"></a>
+<a href="http://getbootstrap.com/" target="_blank"><img src="/public/skill-logos/bootstrap-logo.png"></a> -->
 <!-- <a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/jQuery-logo.gif"> -->
-<a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/js-logo.png"></a>
+<!-- <a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/js-logo.png"></a>
 <a href="https://www.mongodb.com/" target="_blank"><img src="/public/skill-logos/mongoDB-logo.jpg"></a>
 <a href="https://nodejs.org" target="_blank"><img src="/public/skill-logos/nodejs-logo.png"></a>
 <div id="skills-typed">Java • Ruby • Database Modelling and Management • Object Oriented Programming</div>
@@ -51,4 +135,4 @@ Check out my project portfolio <a href="/portfolio">here</a>.
 <p>Have work opportunities? Want to collaborate on a project or Kaggle competition? Need advice or consulting? Or just want to grab a cup of coffee?</p>
 
 <p>Contact me by sending a mail to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
-</div>
+</div> -->

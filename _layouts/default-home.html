@@ -62,5 +62,21 @@
     });
   </script>
 
+  <!-- Animated Modals-->
+  <script src="/public/js/animatedModal.min.js"></script>
+
+  <script>
+    $("#contactAn").animatedModal({
+      modalTarget: 'contactModal',
+      color: '#202020',
+      animatedIn: 'fadeInDown',
+      animatedOut: 'fadeOutUp',
+      overflow: 'hidden',
+      afterClose: function() {
+        $('body').removeAttr('style');
+      }
+    });
+  </script>
+
   </body>
 </html>

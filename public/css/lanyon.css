@@ -18,6 +18,7 @@
  * Contents
  *
  * Global resets
+ * Homepage
  * Masthead
  * Sidebar
  * Slide effect
@@ -60,9 +61,71 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
-#hello-world {
+/*#hello-world {
   height: 100vh;
+}*/
+
+#home-menu {
+  margin-top: 6rem;
 }
+
+
+.hm-item a {
+  text-align: center;
+  color: #c0c0c0;
+}
+
+.hm-item a:hover {
+  color: #292b2c;
+  text-decoration: none;
+}
+
+.hm-item a:focus {
+  text-decoration: none;
+}
+
+.hm-item span {
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hm-modal {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.hm-modal i {
+  color: white;
+}
+
+.modal-content {
+  padding: 1.5rem;
+  max-height: 90%;
+  overflow-y: auto;
+  
+}
+
+.modal-content p {
+  color: #c0c0c0;
+}
+
+.modal-content button {
+  background-color: white;
+  border-color: #c0c0c0;
+  color: #515151;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
+  background-color: #202020;
+  border-color: #202020;
+  color: white;
+}
+
+/*.modal-content span {
+  text-align: right;
+}*/
 
 
 /*
