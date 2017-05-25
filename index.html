@@ -39,12 +39,44 @@ title: Home
 
 <div id="contactModal">
     <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-contactModal"> 
-        CLOSE MODAL
+    <div class="hm-modal close-contactModal"> 
+        <i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
     </div>
             
-    <div class="modal-content">
-        <!--Your modal content goes here-->
+    <div class="modal-content container content">
+    <!-- Form content -->
+    <form>
+
+    <h2>Get in touch.</h2>
+    <p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
+    Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
+
+    <p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p> 
+  	
+  	<div class="form-group">
+  	<label for="inputName">Name</label>
+    <input class="form-control" type="text" id="inputName">
+	</div>
+  	<div class="form-group">
+    <label for="inputEmail">Email address</label>
+    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+  	</div>
+  	<div class="form-group">
+  	<label for="inputSubject">Subject</label>
+    <input class="form-control" type="text" id="inputSubject">
+	</div>
+  	<div class="form-group">
+    <label for="inputMessage">Message</label>
+    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+  	</div>
+  	<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+    	<!-- <form action="https://formspree.io/your@email.com"
+      	method="POST">
+    	<input type="text" name="name">
+    	<input type="email" name="_replyto">
+    	<input type="submit" value="Send">
+		</form> -->
     </div>
 </div>
 

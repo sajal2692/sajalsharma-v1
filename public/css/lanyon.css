@@ -90,6 +90,44 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 
+.hm-modal {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.hm-modal i {
+  color: white;
+}
+
+.modal-content {
+  padding: 1.5rem;
+  max-height: 90%;
+  overflow-y: auto;
+  
+}
+
+.modal-content p {
+  color: #c0c0c0;
+}
+
+.modal-content button {
+  background-color: white;
+  border-color: #c0c0c0;
+  color: #515151;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
+  background-color: #202020;
+  border-color: #202020;
+  color: white;
+}
+
+/*.modal-content span {
+  text-align: right;
+}*/
+
+
 /*
  * Wrapper
  *
