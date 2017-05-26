@@ -90,6 +90,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 
+/*.fa.open-folder:hover:before {
+  content: "\f115";
+}*/
+
+#portAn:hover .open-folder:before {
+  content: "\f115";
+}
+
 .hm-modal {
   text-align: center;
   padding: 0.5rem;
