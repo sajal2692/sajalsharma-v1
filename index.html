@@ -77,26 +77,26 @@ title: Home
     	<p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
 
     	<!-- Form content -->
-    	<form action="https://formspree.io/contact@sajalsharma.com" method="POST"> 
+    	<form action="https://formspree.io/contact@sajalsharma.com" method="POST" data-parsley-validate> 
   	
   			<div class="form-group">
   				<label for="inputName">Name</label>
-    			<input class="form-control" type="text" id="inputName">
+    			<input class="form-control" type="text" id="inputName" required data-parsley-required-message="Always nice to put a name to an e-message.">
 			</div>
 
   			<div class="form-group">
     			<label for="inputEmail">Email address</label>
-    			<input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+    			<input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" required data-parsley-required-message="Communication is a two way street.">
   			</div>
 
   			<div class="form-group">
   				<label for="inputSubject">Subject</label>
-    			<input class="form-control" name="_subject" type="text" id="inputSubject">
+    			<input class="form-control" name="_subject" type="text" id="inputSubject" required data-parsley-required-message="What were we talking about, again?">
 			</div>
 
   			<div class="form-group">
     			<label for="inputMessage">Message</label>
-    			<textarea name="message" class="form-control" id="inputMessage" rows="3"></textarea>
+    			<textarea name="message" class="form-control" id="inputMessage" rows="3" required data-parsley-required-message="Use all and any words known!"></textarea>
   			</div>
 
   			<button type="submit" class="btn btn-primary">Submit</button>
@@ -104,7 +104,7 @@ title: Home
 		</form>
 
     </div>
-    
+
 </div>
 
 

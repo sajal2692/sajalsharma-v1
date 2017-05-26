@@ -73,8 +73,8 @@
   $("#skillsAn").animatedModal({
       modalTarget: 'skillsModal',
       color: '#202020',
-      animatedIn: 'fadeInDown',
-      animatedOut: 'fadeOutUp',
+      animatedIn: 'slideInDown',
+      animatedOut: 'slideOutUp',
       overflow: 'hidden',
       afterOpen: function() {
         $('#skillsModal').css("transform",'initial');
@@ -88,8 +88,8 @@
     $("#contactAn").animatedModal({
       modalTarget: 'contactModal',
       color: '#202020',
-      animatedIn: 'fadeInDown',
-      animatedOut: 'fadeOutUp',
+      animatedIn: 'slideInDown',
+      animatedOut: 'slideOutUp',
       overflow: 'hidden',
       afterOpen: function() {
         $('#contactModal').css("transform",'initial');
@@ -102,6 +102,8 @@
 
 
   </script>
+
+  <script src="public/js/parsley.min.js"></script>
 
   </body>
 </html>
