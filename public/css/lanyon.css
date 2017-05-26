@@ -99,6 +99,15 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+/*Modal visibility hacks*/
+#skillsModal {
+  transform: translate3d(0,-100%,0);
+}
+
+#contactModal {
+  transform: translate3d(0,-100%,0);
+}
+
 .modal-content {
   padding: 1.5rem;
   max-height: 90%;

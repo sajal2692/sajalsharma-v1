@@ -65,17 +65,42 @@
   <!-- Animated Modals-->
   <script src="/public/js/animatedModal.min.js"></script>
 
+  <!-- JS scripts for handling Animated Modal -->
   <script>
+
+
+
+  $("#skillsAn").animatedModal({
+      modalTarget: 'skillsModal',
+      color: '#202020',
+      animatedIn: 'fadeInDown',
+      animatedOut: 'fadeOutUp',
+      overflow: 'hidden',
+      afterOpen: function() {
+        $('#skillsModal').css("transform",'initial');
+      },
+      afterClose: function() {
+        $('body').removeAttr('style');
+      }
+    });
+
+
     $("#contactAn").animatedModal({
       modalTarget: 'contactModal',
       color: '#202020',
       animatedIn: 'fadeInDown',
       animatedOut: 'fadeOutUp',
       overflow: 'hidden',
+      afterOpen: function() {
+        $('#contactModal').css("transform",'initial');
+      },
       afterClose: function() {
         $('body').removeAttr('style');
       }
     });
+
+
+
   </script>
 
   </body>
