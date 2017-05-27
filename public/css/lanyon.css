@@ -103,6 +103,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem;
 }
 
+.hm-modal:hover {
+  cursor: pointer;
+}
+
+.hm-modal:hover i {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
 .hm-modal i {
   color: white;
 }

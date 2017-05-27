@@ -6,43 +6,6 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- TypedJS -->
-  <script src="/public/js/typed.js"></script>
-  
-  <script>
-document.addEventListener('DOMContentLoaded', function(){
-    Typed.new('#typed-intro', {
-      stringsElement: document.getElementById('typed-strings'),
-      // strings: ["Hi, there! ^1000 I'm Sajal. ^1200 <br> ^200<br> ^200 \
-      // A Master of Information Technology graduate from The University of Melbourne, Australia. ^1200 <br> ^200<br> ^200 \
-      // A Software Engineer with expertise in Data Science technologies. ^1200 <br> ^200<br> ^200 \
-      // I'm passionate about using data to "],
-      startDelay: 2000,
-      typeSpeed: 6,
-      callback: function() {
-        $(".typed-cursor").hide();
-        introEnd();
-      }
-    });
-  });
-
-  function introEnd() {
-    Typed.new('#intro-end', {
-      strings: ["understand cause and effect.","extract decision making insight.","help machines learn.","make the world a better place."],
-      backDelay: 1500,
-      typeSpeed: 6,
-      backSpeed: 6,
-      callback: function() {
-        $('#scroll-down').show();
-        $('#scroll-down i').addClass('animated fadeInDown');
-        $(".post-intro-section").show()
-        // $(".post-intro-section").addClass('animated fadeIn')
-        // $('#scroll-down').addClass('pulse');
-      }
-    });
-  }
-  </script>
-
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -62,21 +25,6 @@ document.addEventListener('DOMContentLoaded', function(){
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
   
-
-  <!-- Animations -->
-  <script>
-  // $.fn.extend({
-  //   animateCss: function (animationName) {
-  //       var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-  //       this.addClass('animated ' + animationName).one(animationEnd, function() {
-  //           $(this).removeClass('animated ' + animationName);
-  //       });
-  //   }
-  // });
-
-  // $('#scroll-down i').animateCss('bounce');
-
-  </script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
