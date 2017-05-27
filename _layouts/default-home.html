@@ -136,7 +136,7 @@
     ];
 
     var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("30px","30px","30px","20px");
+    myChart.setMargins("40px","40px","30px","60px");
 
     //Set default colour
     myChart.defaultColors = [
@@ -156,9 +156,7 @@
       myChart.draw(0,true);
     }
 
-    d3.selectAll(("input[name='skillSelect']")).on("change", function(){
-      console.log('hi.');
-      console.log(this.value);
+    $("input[name='skillSelect']:radio").on("change", function(){
       if (this.value=='radioSE') {
         //Skill Set #2
         myChart.data = [
@@ -171,8 +169,6 @@
           { Skill: "Ruby", Level:  6},
           { Skill: "Databases", Level:  9}
         ];
-        x.addOrderRule(["HTML","CSS","Bootstrap","JS/Jquery"])
-
         myChart.draw();
     } else {
       myChart.data = [
@@ -184,7 +180,7 @@
     { Skill: "ML Algorithms", Level:  7},
     { Skill: "Statistics", Level:  7},
     { Skill: "SQL", Level:  7.5},
-    { Skill: "MongoDB", Level:  6.5},
+    { Skill: "MongoDB", Level:  6.5}
     ];
     myChart.draw();
     }
