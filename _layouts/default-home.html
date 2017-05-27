@@ -111,6 +111,7 @@
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
 
+  
   <!-- Code to create skill chart -->
   <script>
     var svg = dimple.newSvg("#skillchart-container", "100%","100%");
@@ -124,32 +125,35 @@
 
     // // Skill Set #1
     var data = [
-    { Skill: "Python", Level: 7},
-    { Skill: "R", Level: 6.5},
+    { Skill: "Python", Level: 7.5},
+    { Skill: "R", Level: 7},
     { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6},
+    { Skill: "Numpy", Level:  6.5},
     { Skill: "Pandas", Level:  8},
     { Skill: "ML Algorithms", Level:  7},
     { Skill: "Statistics", Level:  7},
-    { Skill: "SQL", Level:  7.5},
-    { Skill: "MongoDB", Level:  6.5},
+    { Skill: "SQL/NoSQL", Level:  8},
     ];
 
     var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("40px","40px","30px","60px");
+    myChart.setMargins("40px","40px","30px","90px");
 
     //Set default colour
     myChart.defaultColors = [
-          new dimple.color("#c0c0c0", 1), 
+          new dimple.color("#176cc1"),
       ];
 
+
     // myChart.setBounds(60, 30, 510, 305)
-    var x = myChart.addCategoryAxis("x", "Skill"); 
-    x.addOrderRule(["Python","R","Scikit-learn","Pandas"]);
+    var x = myChart.addCategoryAxis("x", "Skill");
+    x.addOrderRule(["Python", "R", "Pandas","Numpy","ML Algorithms","SQL/NoSQL"]); //Set order
+
     var y = myChart.addMeasureAxis("y", "Level");
     y.overrideMin = 0;
     y.overrideMax = 10;
+
     myChart.addSeries(null, dimple.plot.bar);
+
     myChart.draw();
 
     window.onresize = function() {
@@ -158,31 +162,93 @@
 
     $("input[name='skillSelect']:radio").on("change", function(){
       if (this.value=='radioSE') {
-        //Skill Set #2
-        myChart.data = [
+    
+    //Ugly hack to redraw chart
+    d3.select('svg').remove();
+
+    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
+
+    d3.select("html")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+    d3.select("body")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+
+    // // Skill Set #2
+    var data = [
           { Skill: "HTML", Level:  9},
-          { Skill: "CSS", Level:  7},
-          { Skill: "Bootstrap", Level:  9},
+          { Skill: "CSS", Level:  7.5},
+          { Skill: "Bootstrap", Level:  8.5},
           { Skill: "JS/Jquery", Level:  7},
-          { Skill: "MongoDB", Level:  6},
-          { Skill: "Java", Level:  6},
+          { Skill: "Java", Level:  6.5},
           { Skill: "Ruby", Level:  6},
-          { Skill: "Databases", Level:  9}
+          { Skill: "SQL/NoSQL", Level:  8},
+          { Skill: "Python", Level:  7.5}
         ];
-        myChart.draw();
-    } else {
-      myChart.data = [
-    { Skill: "Python", Level: 7},
+
+    var myChart = new dimple.chart(svg, data);
+    myChart.setMargins("40px","40px","30px","90px");
+
+    //Set default colour
+    myChart.defaultColors = [
+          new dimple.color("#b71919"),
+      ];
+
+    // myChart.setBounds(60, 30, 510, 305)
+    var x = myChart.addCategoryAxis("x", "Skill");
+    x.addOrderRule(["HTML", "CSS", "JS/Jquery","Bootstrap","Java","Ruby","Python","SQL/NoSQL"]); //Set order 
+    var y = myChart.addMeasureAxis("y", "Level");
+    y.overrideMin = 0;
+    y.overrideMax = 10;
+    myChart.addSeries(null, dimple.plot.bar);
+    myChart.draw(1000);
+
+    } 
+
+    else {
+
+    //Ugly hack to redraw chart
+    d3.select('svg').remove();
+
+    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
+
+    d3.select("html")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+    d3.select("body")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+
+    // // Skill Set #1
+    var data = [
+    { Skill: "Python", Level: 7.5},
     { Skill: "R", Level: 6.5},
     { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6},
+    { Skill: "Numpy", Level:  6.5},
     { Skill: "Pandas", Level:  8},
     { Skill: "ML Algorithms", Level:  7},
     { Skill: "Statistics", Level:  7},
-    { Skill: "SQL", Level:  7.5},
-    { Skill: "MongoDB", Level:  6.5}
+    { Skill: "SQL/NoSQL", Level:  8},
     ];
-    myChart.draw();
+
+    var myChart = new dimple.chart(svg, data);
+    myChart.setMargins("40px","40px","30px","90px");
+
+    //Set default colour
+    myChart.defaultColors = [
+          new dimple.color("#176cc1"),
+      ];
+
+    // myChart.setBounds(60, 30, 510, 305)
+    var x = myChart.addCategoryAxis("x", "Skill");
+    x.addOrderRule(["Python", "R", "Pandas","Numpy","ML Algorithms","SQL/NoSQL"]); //Set order
+    var y = myChart.addMeasureAxis("y", "Level");
+    y.overrideMin = 0;
+    y.overrideMax = 10;
+    myChart.addSeries(null, dimple.plot.bar);
+    myChart.draw(1000);
+      
     }
     });
   </script>
