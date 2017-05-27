@@ -67,9 +67,6 @@
 
   <!-- JS scripts for handling Animated Modal -->
   <script>
-
-
-
   $("#skillsAn").animatedModal({
       modalTarget: 'skillsModal',
       color: '#202020',
@@ -98,12 +95,64 @@
         $('body').removeAttr('style');
       }
     });
-
-
-
   </script>
 
   <script src="public/js/parsley.min.js"></script>
+
+
+  <!-- Data Visualization -->
+
+  <!-- D3 and Dimple -->
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+
+  <!-- Code to create skill chart -->
+  <script>
+    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
+
+    d3.select("html")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+    d3.select("body")
+                .style("height", "100%")
+                .style("overflow", "hidden");
+
+    // // Skill Set #1
+    var data = [
+    { Skill: "", Level:  },
+    { Skill: "", Level:  },
+    { Skill: "", Level:  },
+    ];
+
+    var myChart = new dimple.chart(svg, data);
+    myChart.setMargins("50px","30px","50px","50px")
+
+    //Set default colour
+    myChart.defaultColors = [
+          new dimple.color("#c0c0c0", 1), 
+      ];
+
+    // myChart.setBounds(60, 30, 510, 305)
+    var x = myChart.addCategoryAxis("x", "Skill"); 
+    x.addOrderRule(["Cats", "Dogs", "Mice"]);
+    myChart.addMeasureAxis("y", "Level");
+    myChart.addSeries(null, dimple.plot.bar);
+    myChart.draw();
+
+    window.onresize = function() {
+      myChart.draw(0,true);
+    }
+
+    d3.select("#btn").on("click", function() {
+      //Skill Set #2
+      myChart.data = [
+        { Animal: "Cats", Value: (Math.random() * 1000000) },
+        { Animal: "Dogs", Value: (Math.random() * 1000000) },
+        { Animal: "Mice", Value: (Math.random() * 1000000) }
+      ];
+      myChart.draw(1000);
+    });
+  </script>
 
   </body>
 </html>
