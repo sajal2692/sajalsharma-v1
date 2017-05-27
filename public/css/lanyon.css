@@ -90,13 +90,39 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 
+/*.fa.open-folder:hover:before {
+  content: "\f115";
+}*/
+
+#portAn:hover .open-folder:before {
+  content: "\f115";
+}
+
 .hm-modal {
   text-align: center;
   padding: 0.5rem;
 }
 
+.hm-modal:hover {
+  cursor: pointer;
+}
+
+.hm-modal:hover i {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
 .hm-modal i {
   color: white;
+}
+
+/*Modal visibility hacks*/
+#skillsModal {
+  transform: translate3d(0,-100%,0);
+}
+
+#contactModal {
+  transform: translate3d(0,-100%,0);
 }
 
 .modal-content {
@@ -123,9 +149,45 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.btn-primary {
+  color: #202020;
+  border-color: #c0c0c0;
+  background-color: white;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #303030;
+  border-color: #303030;
+}
+
+#skill-switch .btn {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
+#skill-switch .btn:hover {
+  cursor: pointer;
+}
+
+#skill-switch .btn span {
+  margin-left: 0.4rem;
+  vertical-align: super;
+}
+
+/*.dimple-axis {
+  font-size: 0.8rem;
+}*/
+
 /*.modal-content span {
   text-align: right;
 }*/
+
+/*Parsley CSS*/
+.parsley-required {
+  font-size: .7rem;
+  color: #c0c0c0;
+}
 
 
 /*
