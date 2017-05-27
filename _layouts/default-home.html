@@ -99,6 +99,11 @@
 
   <script src="public/js/parsley.min.js"></script>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
 
   <!-- Data Visualization -->
 
@@ -119,13 +124,19 @@
 
     // // Skill Set #1
     var data = [
-    { Skill: "", Level:  },
-    { Skill: "", Level:  },
-    { Skill: "", Level:  },
+    { Skill: "Python", Level: 7},
+    { Skill: "R", Level: 6.5},
+    { Skill: "Scikit-learn", Level: 7.5},
+    { Skill: "Numpy", Level:  6},
+    { Skill: "Pandas", Level:  8},
+    { Skill: "ML Algorithms", Level:  7},
+    { Skill: "Statistics", Level:  7},
+    { Skill: "SQL", Level:  7.5},
+    { Skill: "MongoDB", Level:  6.5},
     ];
 
     var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("50px","30px","50px","50px")
+    myChart.setMargins("30px","30px","30px","20px");
 
     //Set default colour
     myChart.defaultColors = [
@@ -134,8 +145,10 @@
 
     // myChart.setBounds(60, 30, 510, 305)
     var x = myChart.addCategoryAxis("x", "Skill"); 
-    x.addOrderRule(["Cats", "Dogs", "Mice"]);
-    myChart.addMeasureAxis("y", "Level");
+    x.addOrderRule(["Python","R","Scikit-learn","Pandas"]);
+    var y = myChart.addMeasureAxis("y", "Level");
+    y.overrideMin = 0;
+    y.overrideMax = 10;
     myChart.addSeries(null, dimple.plot.bar);
     myChart.draw();
 
@@ -143,14 +156,38 @@
       myChart.draw(0,true);
     }
 
-    d3.select("#btn").on("click", function() {
-      //Skill Set #2
+    d3.selectAll(("input[name='skillSelect']")).on("change", function(){
+      console.log('hi.');
+      console.log(this.value);
+      if (this.value=='radioSE') {
+        //Skill Set #2
+        myChart.data = [
+          { Skill: "HTML", Level:  9},
+          { Skill: "CSS", Level:  7},
+          { Skill: "Bootstrap", Level:  9},
+          { Skill: "JS/Jquery", Level:  7},
+          { Skill: "MongoDB", Level:  6},
+          { Skill: "Java", Level:  6},
+          { Skill: "Ruby", Level:  6},
+          { Skill: "Databases", Level:  9}
+        ];
+        x.addOrderRule(["HTML","CSS","Bootstrap","JS/Jquery"])
+
+        myChart.draw();
+    } else {
       myChart.data = [
-        { Animal: "Cats", Value: (Math.random() * 1000000) },
-        { Animal: "Dogs", Value: (Math.random() * 1000000) },
-        { Animal: "Mice", Value: (Math.random() * 1000000) }
-      ];
-      myChart.draw(1000);
+    { Skill: "Python", Level: 7},
+    { Skill: "R", Level: 6.5},
+    { Skill: "Scikit-learn", Level: 7.5},
+    { Skill: "Numpy", Level:  6},
+    { Skill: "Pandas", Level:  8},
+    { Skill: "ML Algorithms", Level:  7},
+    { Skill: "Statistics", Level:  7},
+    { Skill: "SQL", Level:  7.5},
+    { Skill: "MongoDB", Level:  6.5},
+    ];
+    myChart.draw();
+    }
     });
   </script>
 

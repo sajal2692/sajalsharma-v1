@@ -12,7 +12,6 @@ title: Home
 	<span id="typed-intro"></span><i><span id="intro-end"></span></i>
 </div>
 
-
 <div id="home-menu" class="d-flex justify-content-around">
 	
 	<!-- Skills -->
@@ -57,10 +56,24 @@ title: Home
     
     <div class="modal-content container content">
     	<h2>Stuff I know.</h2>
-    	<p>A bar chart to visualize my tech skills, and proficiency levels (because why not?).</p>
-    	<p>Updated constantly. ;)</p>
-    	<div id="skill-switch"></div>
-    	<div id="skillchart-container" style="height: 65vh">
+    	<p>A bar chart to visualize my tech skills, and proficiency levels. (because, why not?)<br>
+    	Updated frequently. ;)</p>
+    	<div>
+    		<div id="skill-switch" class="d-flex justify-content-around" data-toggle="buttons">
+    		<label class="btn btn-primary active">
+    		<input type="radio" name="skillSelect" value="radioDS" checked>
+    			<i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span>Data Science</span>
+  			</label>
+  			<label class="btn btn-primary">
+    		<input type="radio" name="skillSelect" value="radioSE">
+    			<i class="fa fa-cogs fa-2x" aria-hidden="true"></i><span>Software Dev</span>
+  			</label>
+
+    		<!-- <div class="btn bt-primary"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>Data Science</div>
+    		<div><i class="fa fa-cogs fa-2x" aria-hidden="true"></i>Software Dev</div> -->
+    		</div>
+    	</div>
+    	<div id="skillchart-container" style="height: 60vh">
     	</div>
     </div>
 

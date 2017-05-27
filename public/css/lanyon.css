@@ -149,6 +149,32 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.btn-primary {
+  color: #202020;
+  border-color: #c0c0c0;
+  background-color: white;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #303030;
+  border-color: #303030;
+}
+
+#skill-switch .btn {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
+#skill-switch .btn:hover {
+  cursor: pointer;
+}
+
+#skill-switch .btn span {
+  margin-left: 0.4rem;
+  vertical-align: super;
+}
+
 /*.modal-content span {
   text-align: right;
 }*/
