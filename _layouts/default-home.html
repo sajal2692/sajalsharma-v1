@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head-home.html %}
+  {% include head.html %}
 
   <body>
 
@@ -65,191 +65,16 @@
   <!-- Animated Modals-->
   <script src="/public/js/animatedModal.min.js"></script>
 
-  <!-- JS scripts for handling Animated Modal -->
   <script>
-  $("#skillsAn").animatedModal({
-      modalTarget: 'skillsModal',
-      color: '#202020',
-      animatedIn: 'slideInDown',
-      animatedOut: 'slideOutUp',
-      overflow: 'hidden',
-      afterOpen: function() {
-        $('#skillsModal').css("transform",'initial');
-      },
-      afterClose: function() {
-        $('body').removeAttr('style');
-      }
-    });
-
-
     $("#contactAn").animatedModal({
       modalTarget: 'contactModal',
       color: '#202020',
-      animatedIn: 'slideInDown',
-      animatedOut: 'slideOutUp',
+      animatedIn: 'fadeInDown',
+      animatedOut: 'fadeOutUp',
       overflow: 'hidden',
-      afterOpen: function() {
-        $('#contactModal').css("transform",'initial');
-      },
       afterClose: function() {
         $('body').removeAttr('style');
       }
-    });
-  </script>
-
-  <script src="public/js/parsley.min.js"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
-
-  <!-- Data Visualization -->
-
-  <!-- D3 and Dimple -->
-  <script src="http://d3js.org/d3.v4.min.js"></script>
-  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
-
-  
-  <!-- Code to create skill chart -->
-  <script>
-    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
-
-    d3.select("html")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-    d3.select("body")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-
-    // // Skill Set #1
-    var data = [
-    { Skill: "Python", Level: 7.5},
-    { Skill: "R", Level: 7},
-    { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6.5},
-    { Skill: "Pandas", Level:  8},
-    { Skill: "ML Algorithms", Level:  7},
-    { Skill: "Statistics", Level:  7},
-    { Skill: "SQL/NoSQL", Level:  8},
-    ];
-
-    var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("40px","40px","30px","90px");
-
-    //Set default colour
-    myChart.defaultColors = [
-          new dimple.color("#176cc1"),
-      ];
-
-
-    // myChart.setBounds(60, 30, 510, 305)
-    var x = myChart.addCategoryAxis("x", "Skill");
-    x.addOrderRule(["Python", "R", "Pandas","Numpy","ML Algorithms","SQL/NoSQL"]); //Set order
-
-    var y = myChart.addMeasureAxis("y", "Level");
-    y.overrideMin = 0;
-    y.overrideMax = 10;
-
-    myChart.addSeries(null, dimple.plot.bar);
-
-    myChart.draw();
-
-    window.onresize = function() {
-      myChart.draw(0,true);
-    }
-
-    $("input[name='skillSelect']:radio").on("change", function(){
-      if (this.value=='radioSE') {
-    
-    //Ugly hack to redraw chart
-    d3.select('svg').remove();
-
-    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
-
-    d3.select("html")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-    d3.select("body")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-
-    // // Skill Set #2
-    var data = [
-          { Skill: "HTML", Level:  9},
-          { Skill: "CSS", Level:  7.5},
-          { Skill: "Bootstrap", Level:  8.5},
-          { Skill: "JS/Jquery", Level:  7},
-          { Skill: "Java", Level:  6.5},
-          { Skill: "Ruby", Level:  6},
-          { Skill: "SQL/NoSQL", Level:  8},
-          { Skill: "Python", Level:  7.5}
-        ];
-
-    var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("40px","40px","30px","90px");
-
-    //Set default colour
-    myChart.defaultColors = [
-          new dimple.color("#b71919"),
-      ];
-
-    // myChart.setBounds(60, 30, 510, 305)
-    var x = myChart.addCategoryAxis("x", "Skill");
-    x.addOrderRule(["HTML", "CSS", "JS/Jquery","Bootstrap","Java","Ruby","Python","SQL/NoSQL"]); //Set order 
-    var y = myChart.addMeasureAxis("y", "Level");
-    y.overrideMin = 0;
-    y.overrideMax = 10;
-    myChart.addSeries(null, dimple.plot.bar);
-    myChart.draw(1000);
-
-    } 
-
-    else {
-
-    //Ugly hack to redraw chart
-    d3.select('svg').remove();
-
-    var svg = dimple.newSvg("#skillchart-container", "100%","100%");
-
-    d3.select("html")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-    d3.select("body")
-                .style("height", "100%")
-                .style("overflow", "hidden");
-
-    // // Skill Set #1
-    var data = [
-    { Skill: "Python", Level: 7.5},
-    { Skill: "R", Level: 6.5},
-    { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6.5},
-    { Skill: "Pandas", Level:  8},
-    { Skill: "ML Algorithms", Level:  7},
-    { Skill: "Statistics", Level:  7},
-    { Skill: "SQL/NoSQL", Level:  8},
-    ];
-
-    var myChart = new dimple.chart(svg, data);
-    myChart.setMargins("40px","40px","30px","90px");
-
-    //Set default colour
-    myChart.defaultColors = [
-          new dimple.color("#176cc1"),
-      ];
-
-    // myChart.setBounds(60, 30, 510, 305)
-    var x = myChart.addCategoryAxis("x", "Skill");
-    x.addOrderRule(["Python", "R", "Pandas","Numpy","ML Algorithms","SQL/NoSQL"]); //Set order
-    var y = myChart.addMeasureAxis("y", "Level");
-    y.overrideMin = 0;
-    y.overrideMax = 10;
-    myChart.addSeries(null, dimple.plot.bar);
-    myChart.draw(1000);
-      
-    }
     });
   </script>
 

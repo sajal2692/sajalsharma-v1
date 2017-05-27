@@ -3,124 +3,136 @@ layout: default-home
 title: Home
 ---
 <div id="hello-world">
-	<div id="typed-strings">
-		<p>Hi, there! ^1000 <strong>I'm Sajal.</strong> ^1200 <br> ^200<br> ^200 
-       	Master of Information Technology graduate from <strong><a target="_blank" href="http://www.unimelb.edu.au/">The University of Melbourne, Australia</a></strong>. ^1200 <br> ^200<br> ^200
-       	Software Engineer with <strong>expertise in Data Science technologies.</strong> ^1200 <br> ^200<br> ^200 
-       	I'm passionate about using data to </p>
-	</div>
-	<span id="typed-intro"></span><i><span id="intro-end"></span></i>
+<div id="typed-strings">
+	<p>Hi, there! ^1000 <strong>I'm Sajal.</strong> ^1200 <br> ^200<br> ^200 
+       Master of Information Technology graduate from <strong><a target="_blank" href="http://www.unimelb.edu.au/">The University of Melbourne, Australia</a></strong>. ^1200 <br> ^200<br> ^200
+       Software Engineer with <strong>expertise in Data Science technologies.</strong> ^1200 <br> ^200<br> ^200 
+       I'm passionate about using data to </p>
 </div>
+<span id="typed-intro"></span><i><span id="intro-end"></span></i>
+</div>
+
 
 <div id="home-menu" class="d-flex justify-content-around">
-	
-	<!-- Skills -->
-	<div class="hm-item">
-		<a id="skillsAn" href="#skillsModal">
-		<div>
-			<i class="fa fa-code fa-2x" aria-hidden="true"></i>
-		</div>
-		<span>Skills<span>
-		</a>
-	</div>
-
-	<!-- Portfolio -->
-	<div class="hm-item">
-		<a id="portAn" target="_blank" href="/portfolio">
-		<div>
-			<i class="fa fa-folder-o fa-2x open-folder" aria-hidden="true"></i>
-		</div>
-		<span>Portfolio</span>
-		</a>
-	</div>
-
-	<!-- Contact -->
-	<div class="hm-item">
-		<a id="contactAn" href="#contactModal">
-		<div>
-			<i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
-		</div>
-		<span>Contact</span>
-		</a>
-	</div>
-
+<div class="hm-item"><a href="#">
+<div><i class="fa fa-code fa-2x" aria-hidden="true"></i>
+</div>
+<span>Skills<span>
+</a>
+</div>
+<div class="hm-item"><a target="_blank" href="/portfolio">
+<div><i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>
+</div>
+<span>Portfolio</span>
+</a>
+</div>
+<div class="hm-item"><a id="contactAn" href="#contactModal">
+<div><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></div>
+<span>Contact</span>
+</a>
+</div>
+<!-- <div>
+<h2>Blog</h2>
+</div> -->
 </div>
 
 
-<!-- Modal for Skills Section -->
-<div id="skillsModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="hm-modal close-skillsModal"> 
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </div>   
-    
-    <div class="modal-content container content">
-    	<h2>Stuff I know.</h2>
-    	<p>A bar chart to visualize my tech skills, and proficiency levels. Updated frequently. ;)<br>
-    	Also check out my <a href="#">About</a> page for a more old-school overview.</p>
-    	<div>
-    		<div id="skill-switch" class="d-flex justify-content-around" data-toggle="buttons">
-    		<label class="btn btn-primary active">
-    		<input type="radio" name="skillSelect" value="radioDS" checked>
-    			<i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span>Data Science</span>
-  			</label>
-  			<label class="btn btn-primary">
-    		<input type="radio" name="skillSelect" value="radioSE">
-    			<i class="fa fa-cogs fa-2x" aria-hidden="true"></i><span>Software Dev</span>
-  			</label>
-
-    		<!-- <div class="btn bt-primary"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>Data Science</div>
-    		<div><i class="fa fa-cogs fa-2x" aria-hidden="true"></i>Software Dev</div> -->
-    		</div>
-    	</div>
-    	<div id="skillchart-container" style="height: 60vh">
-    	</div>
-    </div>
-
-</div>
-
-
-
-
-<!-- Modal for Contact Form -->
 <div id="contactModal">
     <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
     <div class="hm-modal close-contactModal"> 
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
     </div>
             
     <div class="modal-content container content">
-    	<h2>Get in touch.</h2>
-    	<p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
-    	Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
+    <!-- Form content -->
+    <form action="https://formspree.io/contact@sajalsharma.com"
+      method="POST">
 
-    	<p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
+    <h2>Get in touch.</h2>
+    <p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
+    Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
 
-    	<!-- Form content -->
-    	<form action="https://formspree.io/contact@sajalsharma.com" method="POST" data-parsley-validate>
-
-  			<div class="form-group">
-  				<label for="inputName">Name</label>
-    			<input class="form-control" type="text" id="inputName" required data-parsley-required-message="Always nice to put a name to an e-message.">
-			</div>
-
-  			<div class="form-group">
-    			<label for="inputEmail">Email address</label>
-    			<input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" required data-parsley-required-message="Communication is a two way street.">
-  			</div>
-
-  			<div class="form-group">
-  				<label for="inputSubject">Subject</label>
-    			<input class="form-control" name="_subject" type="text" id="inputSubject" required data-parsley-required-message="What were we talking about, again?">
-			</div>
-
-  			<div class="form-group">
-    			<label for="inputMessage">Message</label>
-    			<textarea name="message" class="form-control" id="inputMessage" rows="3" required data-parsley-required-message="Use all and any words known!"></textarea>
-  			</div>
-
-  			<button type="submit" class="btn btn-primary">Submit</button>
-
-		</form>
+    <p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p> 
+  	
+  	<div class="form-group">
+  	<label for="inputName">Name</label>
+    <input class="form-control" type="text" id="inputName">
+	</div>
+  	<div class="form-group">
+    <label for="inputEmail">Email address</label>
+    <input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+  	</div>
+  	<div class="form-group">
+  	<label for="inputSubject">Subject</label>
+    <input class="form-control" name="_subject" type="text" id="inputSubject">
+	</div>
+  	<div class="form-group">
+    <label for="inputMessage">Message</label>
+    <textarea name="message" class="form-control" id="inputMessage" rows="3"></textarea>
+  	</div>
+  	<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+    	<!-- <form action="https://formspree.io/your@email.com"
+      	method="POST">
+    	<input type="text" name="name">
+    	<input type="email" name="_replyto">
+    	<input type="submit" value="Send">
+		</form> -->
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="scroll-down">
+	<i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i>
+</div>
+</div> -->
+<!-- Old site intro -->
+<!-- <div class="post-intro-section" id="skills">
+<h2>Skills</h2>
+<hr>
+<h3>Data Science</h3>
+<a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/python-logo.png"></a>
+<a href="http://scikit-learn.org/" target="_blank"><img src="/public/skill-logos/scikit-learn-logo.png"></a>
+<a href="http://pandas.pydata.org/" target="_blank"><img src="/public/skill-logos/pandas-logo.png"></a>
+<a href="https://ipython.org/notebook.html" target="_blank"><img src="/public/skill-logos/ipython-logo.jpg"></a>
+<a href="https://www.r-project.org/" target="_blank"><img src="/public/skill-logos/R-logo.png"></a>
+<div id="skills-typed">Machine Learning • Natural Language Processing • Data Analytics • Statistical Analysis</div>
+<hr>
+<h3>Software Development</h3>
+<a href="" target="_blank"><img src="/public/skill-logos/html-css-logos.svg"></a>
+<a href="http://getbootstrap.com/" target="_blank"><img src="/public/skill-logos/bootstrap-logo.png"></a> -->
+<!-- <a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/jQuery-logo.gif"> -->
+<!-- <a href="https://www.python.org" target="_blank"><img src="/public/skill-logos/js-logo.png"></a>
+<a href="https://www.mongodb.com/" target="_blank"><img src="/public/skill-logos/mongoDB-logo.jpg"></a>
+<a href="https://nodejs.org" target="_blank"><img src="/public/skill-logos/nodejs-logo.png"></a>
+<div id="skills-typed">Java • Ruby • Database Modelling and Management • Object Oriented Programming</div>
+</div>
+
+<div class="post-intro-section" id="projects">
+<h2>Projects</h2>
+<hr>
+Check out my project portfolio <a href="/portfolio">here</a>.
+</div>
+
+<div class="post-intro-section" id="contact">
+<h2>Contact Me</h2>
+<hr>
+<p>Have work opportunities? Want to collaborate on a project or Kaggle competition? Need advice or consulting? Or just want to grab a cup of coffee?</p>
+
+<p>Contact me by sending a mail to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
+</div> -->
