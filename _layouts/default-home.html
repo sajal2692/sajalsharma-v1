@@ -112,8 +112,12 @@
   <script src="/public/js/dimple.v2.3.0.min.js"></script>
 
   
+
   <!-- Code to create skill chart -->
   <script>
+  // Resetting Modals
+  $(".modal-content").removeAttr('style');
+
     var svg = dimple.newSvg("#skillchart-container", "100%","100%");
 
     d3.select("html")
@@ -251,6 +255,7 @@
       
     }
     });
+
   </script>
 
   </body>
