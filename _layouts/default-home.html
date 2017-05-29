@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head-home.html %}
+  {% include head.html %}
 
   <body>
 
@@ -46,6 +46,35 @@
         }, false);
       })(document);
     </script>
+
+  <!-- TypedJS -->
+  <script src="/public/js/typed.js"></script>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('#typed-intro', {
+      stringsElement: document.getElementById('typed-strings'),
+      startDelay: 2000,
+      typeSpeed: 6,
+      callback: function() {
+        $(".typed-cursor").hide();
+        introEnd();
+      }
+    });
+  });
+
+  function introEnd() {
+    Typed.new('#intro-end', {
+      strings: ["understand cause and effect.","extract decision making insight.","help machines learn.","make the world a better place."],
+      backDelay: 1500,
+      typeSpeed: 6,
+      backSpeed: 6,
+      callback: function() {
+        $('.hm-item').addClass('animated pulse');
+      }
+    });
+  }
+  </script>
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -129,10 +158,10 @@
 
     // // Skill Set #1
     var data = [
-    { Skill: "Python", Level: 7.5},
+    { Skill: "Python", Level: 7},
     { Skill: "R", Level: 7},
-    { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6.5},
+    { Skill: "Scikit-learn", Level: 7},
+    { Skill: "Numpy", Level:  6},
     { Skill: "Pandas", Level:  8},
     { Skill: "ML Algorithms", Level:  7},
     { Skill: "Statistics", Level:  7},
@@ -182,13 +211,13 @@
     // // Skill Set #2
     var data = [
           { Skill: "HTML", Level:  9},
-          { Skill: "CSS", Level:  7.5},
-          { Skill: "Bootstrap", Level:  8.5},
+          { Skill: "CSS", Level:  7},
+          { Skill: "Bootstrap", Level:  8},
           { Skill: "JS/Jquery", Level:  7},
-          { Skill: "Java", Level:  6.5},
+          { Skill: "Java", Level:  6},
           { Skill: "Ruby", Level:  6},
           { Skill: "SQL/NoSQL", Level:  8},
-          { Skill: "Python", Level:  7.5}
+          { Skill: "Python", Level:  7}
         ];
 
     var myChart = new dimple.chart(svg, data);
@@ -226,10 +255,10 @@
 
     // // Skill Set #1
     var data = [
-    { Skill: "Python", Level: 7.5},
-    { Skill: "R", Level: 6.5},
-    { Skill: "Scikit-learn", Level: 7.5},
-    { Skill: "Numpy", Level:  6.5},
+    { Skill: "Python", Level: 7},
+    { Skill: "R", Level: 6},
+    { Skill: "Scikit-learn", Level: 7},
+    { Skill: "Numpy", Level:  6},
     { Skill: "Pandas", Level:  8},
     { Skill: "ML Algorithms", Level:  7},
     { Skill: "Statistics", Level:  7},
