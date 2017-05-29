@@ -12,6 +12,7 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'public/typed.min.js': ['public/typed.js'],
+          'public/scripts.min.js': ['public/scripts.js']
         }
       }
     },
