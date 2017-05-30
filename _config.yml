@@ -32,6 +32,10 @@ gems:
   - jekyll-paginate
   - jekyll-assets
 
+# Compress.html
+compress_html:
+  comments: ["<!-- ", " -->"]
+
 
 # jekyll-assets
 assets:
