@@ -8,3 +8,4 @@ gem 'jekyll-paginate'
 gem 'github-pages', versions['github-pages']
 gem 'jekyll-assets'
 gem 'font-awesome-sass'
+gem 'uglifier'

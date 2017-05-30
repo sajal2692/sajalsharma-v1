@@ -1,3 +1,8 @@
+//= require typed
+//= require animatedModal
+//= require dimple.v2.3.0
+//= require parsley
+
 $(document).ready(function() {
 
 	// Content:
@@ -69,9 +74,6 @@ $(document).ready(function() {
         $('body').removeAttr('style');
       }
     });
-
-
-
 
     //D3/Dimple charts
     // Resetting Modals

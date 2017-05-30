@@ -31,3 +31,18 @@ version:             0.9.3
 gems:               
   - jekyll-paginate
   - jekyll-assets
+
+
+# jekyll-assets
+assets:
+  compress:
+    js: true
+    css: true
+
+  assets:
+    = "*.png"
+  
+  sources:
+    - _assets/images/project-images/card-headers
+
+
