@@ -36,6 +36,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    json (1.8.6)
     kramdown (1.13.2)
     liquid (3.0.6)
     listen (3.0.6)
@@ -65,6 +66,7 @@ DEPENDENCIES
   font-awesome-sass
   jekyll-assets
   jekyll-paginate
+  json
   uglifier
 
 BUNDLED WITH
