@@ -25,7 +25,24 @@ author:
   email:             contact@sajalsharma.com
 
 # Custom vars
-version:             0.9.2
+version:             0.9.3
 
 #Gems
-gems:               [jekyll-paginate]
+gems:               
+  - jekyll-paginate
+  - jekyll-assets
+
+
+# jekyll-assets
+assets:
+  compress:
+    js: true
+    css: true
+
+  assets:
+    = "*.png"
+  
+  sources:
+    - _assets/images/project-images/card-headers
+
+
