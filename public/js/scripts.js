@@ -5,8 +5,7 @@ $(document).ready(function() {
 	// - Scroll to top
 	// - Animated Modals
 	// - D3/Dimple charts
-
-
+	
   // Typed Intro 		
   $(function(){
   	$('#typed-intro').typed({

@@ -11,14 +11,18 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'public/typed.min.js': ['public/typed.js'],
-          'public/scripts.min.js': ['public/scripts.js']
+          'public/js/typed.min.js': ['public/js/typed.js'],
+          'public/js/scripts.min.js': ['public/js/scripts.js']
         }
       }
     },
     
     cssmin: {
-
+      target: {
+        files: {
+        'public/css/release.css': ['public/css/lanyon.css', 'public/css/poole.css','public/css/syntax.css']
+        }
+      }
     },
     
     htmlmin: {
@@ -35,6 +39,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','htmlmin','cssmin']);
+  grunt.registerTask('default', ['uglify','cssmin']);
 
 };
