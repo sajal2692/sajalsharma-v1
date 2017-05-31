@@ -4,6 +4,7 @@ title: Moneyball - Using EDA to Identify Replacement Players
 skills: R, Exploratory Data Analysis, gplot, dplyr
 external_type: RPubs
 external_url: http://rpubs.com/sajal_sharma/moneyball_lost_players
+description: Exploration of baseball data for the year 2001 using R to look at replacements for key players lost by the Oakland A's in 2001.
 ---
 ---
 

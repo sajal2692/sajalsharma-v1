@@ -4,6 +4,7 @@ title: 3-Way Sentiment Analysis for Tweets
 skills: Python, Scikit-learn, NLP
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/3-Way%20Sentiment%20Analysis%20for%20Tweets.ipynbcustomer_segments.ipynb
+description: 3-way polarity (positive, negative, neutral) classification system for tweets, without using NLTK's sentiment analysis engine.
 ---
 ---
 

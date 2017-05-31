@@ -4,6 +4,7 @@ title: Cross Language Information Retrieval System
 skills: Python, NLP, IR, Machine Translation, Language Models
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/Cross%20Language%20Information%20Retrieval.ipynb
+description: Cross language information retrieval system (CLIR) which, given a query in German, searches text documents written in English using Natural Language Processing.
 ---
 ---
 

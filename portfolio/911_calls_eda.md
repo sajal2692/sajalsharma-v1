@@ -4,6 +4,7 @@ title: 911 Calls - Exploratory Data Analysis
 skills: Python, Pandas, Seaborn
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/911%20Calls%20-%20Exploratory%20Analysis.ipynb
+description: Exploratory Data Analysis of the 911 calls dataset hosted on Kaggle. Demonstrates extraction of useful features from different variables.
 ---
 ---
 

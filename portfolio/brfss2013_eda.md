@@ -4,6 +4,7 @@ title: Behavioral Risk Factor Surveillance System 2013 Exploratory Data Analysis
 skills: Descriptive Statistics, R, ggplot, dplyr
 external_type: RPubs
 external_url: http://rpubs.com/sajal_sharma/brfss2013
+description: Analysis of the BRFSS-2013 data set using R, focusing on investigating the relationship between education and eating habits, sleep and mental health, and smoking, drinking and general health of a person.
 ---
 ---
 

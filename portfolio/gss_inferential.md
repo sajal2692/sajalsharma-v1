@@ -4,6 +4,7 @@ title: Inferential Statistics - Do men or women oppose sex education?
 skills: Hypothesis testing, R, ggplot, dplyr
 external_type: RPubs
 external_url: http://rpubs.com/sajal_sharma/inferential_statistics
+description: Analysing the GSS (General Social Survey) dataset using R to infer if, in the year 2012, were men, of 18 years or above in the United States, more likely to oppose sex education in public schools than women.
 ---
 ---
 

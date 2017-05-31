@@ -4,6 +4,7 @@ title: Creating Customer Segments using Unsupervised Machine Learning
 skills: Python, Scikit-learn, PCA, Clustering
 external_type: Github
 external_url: https://github.com/sajal2692/data-science-portfolio/blob/master/customer_segments/customer_segments.ipynb
+description: Analyzing customer spending data using Unsupervised Learning techniques for discovering internal structure, patterns and knowledge.
 ---
 ---
 

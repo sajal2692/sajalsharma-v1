@@ -13,7 +13,7 @@ description:         'The internet home of Sajal Sharma. Data Scientist. Softwar
 url:                 http://www.sajalsharma.com
 baseurl:             ''
 blogurl:             '/blog'
-paginate:            3
+paginate:            5
 
 # Pagination
 paginate_path:       'blog/page:num/'
@@ -25,12 +25,13 @@ author:
   email:             contact@sajalsharma.com
 
 # Custom vars
-version:             0.9.3
+version:             1.0.1
 
 #Gems
 gems:               
   - jekyll-paginate
   - jekyll-assets
+  - jekyll-seo-tag
 
 # Compress.html
 compress_html:
