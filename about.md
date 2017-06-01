@@ -30,11 +30,11 @@ for use with concepts such as:
 
 Machine Learning Algorithms, Data Analytics, Statistical Data Analysis, Natural Language Processing, Data Visualization, Database Systems & Information Modelling • Software Engineering • Web Application Development, <em>and more!</em>
 
-Currently I'm working on learning brushing up my Big Data skills, and applying Machine Learning models to real world problems.
+Currently I'm working on brushing up my Big Data skills, and applying Machine Learning models to real world problems.
 
 ### Certificates I've completed:
 
-To feed my hunger for learning, I take online courses for different Data Science topics, and work independently on projects in my free time. Some of them include:
+To feed my hunger for learning, I take online courses for different Data Science topics and work independently on projects in my free time. Some of them include:
 
 * Machine Learning Engineer Nanodegree - by Kaggle and Google - Udacity
 * Statistics Specialization: Introduction to Probability and Data - by Duke University - Coursera
@@ -45,7 +45,7 @@ To feed my hunger for learning, I take online courses for different Data Science
 
 Check out my [portfolio](/portfolio) to see iPython notebooks and Github repos for some of the projects I've worked on.
 
-And that's about it! Feel free to connect on [LinkedIn](https://www.linkedin.com/in/sajals) or get in touch, if you want to discuss opportunities, collaboration, consulting or have a heated debate about the best coffee in India. I'm always happy to chat! 
+And that's about it! Feel free to connect on [LinkedIn](https://www.linkedin.com/in/sajals) or get in touch if you want to discuss opportunities, collaboration, consulting or have a heated debate about the best coffee in India. I'm always happy to chat! 
 
 You can find a contact form on the homepage, or send an email directly to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>. 
 
