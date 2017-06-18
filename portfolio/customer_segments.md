@@ -1169,7 +1169,7 @@ Advantages of Gaussian Mixture Model clustering:
 - Good for estimating soft clusters i.e. we're not sure if a point belongs to one cluster over another.
 - Does not bias the cluster sizes to have specific structures in the cluster that may or may not exist.
 
-Gven what we know about the wholesale customer data so far, we'll chose to use Gaussian Mixture Model clustering over K-Means. This is because there might be some hidden patterns in the data that we may miss by assigning only one cluster to each data point. For example, let's take the case of the Supermarket customer in our sample: while doing PCA, it had similar and high positive weights for multiple dimensions, i.e. it didn't belong to one dimension over the other. So a supermarket may be a combination of a fresh produce store/grocery store/frozen goods store.
+Given what we know about the wholesale customer data so far, we'll chose to use Gaussian Mixture Model clustering over K-Means. This is because there might be some hidden patterns in the data that we may miss by assigning only one cluster to each data point. For example, let's take the case of the Supermarket customer in our sample: while doing PCA, it had similar and high positive weights for multiple dimensions, i.e. it didn't belong to one dimension over the other. So a supermarket may be a combination of a fresh produce store/grocery store/frozen goods store.
 
 We'll choose GMM, so that we don't miss cases like these. 
 
