@@ -1,6 +1,6 @@
 ---
 layout: notebook
-title: Inferential Statistics - Do men or women oppose sex education? 
+title: Inferential Statistics - Do men or women oppose sex education?
 skills: Hypothesis testing, R, ggplot, dplyr
 external_type: RPubs
 external_url: http://rpubs.com/sajal_sharma/inferential_statistics
@@ -74,9 +74,8 @@ selecting the variables we're interested in. These are
 -   sex: Respondent's sex
 -   sexeduc: For or against sex education in public schools
 
-<!-- -->
 
-    dataset <- filter(gss, year == 2012) %>%
+      dataset <- filter(gss, year == 2012) %>%
       select(sex,sexeduc)
 
 Let's look at the type of variables we're dealing with:
@@ -178,7 +177,7 @@ sex education by:
     inference(x= sex,y = sexeduc, data = dataset, statistic = "proportion", type = "ht", null = 0 ,method = "theoretical",alternative="greater", success = "Oppose")
 
     ## Response variable: categorical (2 levels, success: Oppose)
-    ## Explanatory variable: categorical (2 levels) 
+    ## Explanatory variable: categorical (2 levels)
     ## n_Male = 583, p_hat_Male = 0.1098
     ## n_Female = 691, p_hat_Female = 0.0767
     ## H0: p_Male =  p_Female
@@ -202,7 +201,7 @@ p-value test.
     inference(x= sex,y = sexeduc, data = dataset, statistic = "proportion", type = "ci",method = "theoretical", success = "Oppose")
 
     ## Response variable: categorical (2 levels, success: Oppose)
-    ## Explanatory variable: categorical (2 levels) 
+    ## Explanatory variable: categorical (2 levels)
     ## n_Male = 583, p_hat_Male = 0.1098
     ## n_Female = 691, p_hat_Female = 0.0767
     ## 95% CI (Male - Female): (9e-04 , 0.0653)
