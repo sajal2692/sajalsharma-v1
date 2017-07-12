@@ -6,6 +6,8 @@
 
 @import 'animate';
 
+@import 'gfont';
+
  /*  ___
  * /\_ \
  * \//\ \      __      ___   __  __    ___     ___
@@ -136,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
   max-height: 90%;
   overflow-y: auto;
-  
+
 }
 
 .modal-content p {
@@ -336,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Social icons in sidebar*/
 .social-icons {
-  text-align: center; 
+  text-align: center;
 }
 
 .social-icons i {
