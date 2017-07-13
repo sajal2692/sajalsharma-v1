@@ -26,6 +26,22 @@
   </script>
 
 
+  <!-- Inlined Critical CSS -->
+  <style type="text/css">
+    {% include critical_index.css %}
+  </style>
+
+  <!-- Lazy loading rest of the css, with help from loadCSS -->
+  <link rel="preload" href="/assets/main.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/main.css"></noscript>
+  <script type="text/javascript">
+  /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+  {% include loadcss.js %}
+  /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+  {% include cssrelpreload.js %}
+  </script>
+
+
 
   <!-- CSS -->
   <!-- Bootstrap: Alpha v4 -->
@@ -34,7 +50,7 @@
   <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css"> -->
   <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css"> -->
   <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css"> -->
-  {% css main %}
+  <!-- {% css main %} -->
 
   <!-- Google Font -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400" async> -->
