@@ -50,4 +50,4 @@ assets:
     - "*.jpg"
 
   sources:
-    - _assets/images/project-images/card-headers
+    - public/project-images/card-headers
