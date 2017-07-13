@@ -28,7 +28,7 @@ author:
 version:             1.0.1
 
 #Gems
-gems:               
+gems:
   - jekyll-paginate
   - jekyll-assets
   - jekyll-seo-tag
@@ -45,9 +45,9 @@ assets:
     css: true
 
   assets:
-    = "*.png"
-  
+    - "*.png"
+    - "*.jpeg"
+    - "*.jpg"
+
   sources:
     - _assets/images/project-images/card-headers
-
-
