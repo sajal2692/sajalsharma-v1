@@ -20,7 +20,7 @@ In the past I've worked as a Technical Lead in a service oriented startup, <em>E
 
 So yeah, I have my fair share of startup experience, and the usual get sh*t done attitude that comes with it.
 
-I'm also <em>really</em> into indie music, creative writing, travelling, and caffeine. Though I cycle between hobbies with the change of seasons.
+I'm also <em>really</em> into indie rock, creative writing, travelling, and caffeine. I cycle between other hobbies as well, with the change of seasons.
 
 <hr>
 
