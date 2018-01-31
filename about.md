@@ -28,7 +28,7 @@ I'm also <em>really</em> into indie rock, creative writing, travelling, and caff
 
 As a result of my perpetual curiosity, I have practical experience with a wide range of technologies including:
 
-Python • R • Ruby • Java • Javascript • AngularJS • HTML • CSS • Bootstrap • NodeJS • Jquery • MySQL • MongoDB • Scikit-Learn • NLTK • Pandas • Numpy
+Python • R • Ruby • Java • Javascript • ReactJS • AngularJS • HTML • CSS • Bootstrap • NodeJS • Jquery • MySQL • MongoDB • Scikit-Learn • NLTK • Pandas • Numpy
 
 for use with concepts such as:
 
