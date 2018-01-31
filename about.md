@@ -46,7 +46,7 @@ To feed my hunger for learning, I take online courses for different Data Science
 * Big Data Foundations, including Hadoop and Spark - by IBM - Big Data University
 * Data Science and Machine Learning with R - Udemy
 * Python Data Science and Machine Learning Bootcamp - Udemy
-* React Nanodegree - Udacity (Currently fighting deadlines)
+* React Nanodegree - Udacity (why? because I like being woke!)
 
 Check out my [portfolio](/portfolio) to see iPython notebooks and Github repos for some of the projects I've worked on.
 
