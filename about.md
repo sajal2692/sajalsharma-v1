@@ -14,13 +14,13 @@ Hi, I'm Sajal.
 
 I hail from New Delhi, India. Though, I have spent a couple of the past few years in Melbourne, Australia where I completed a Master of Information Technology degree from The University of Melbourne, Australia's most prestigious university.
 
-I currently live in Pune, working as a Data Scientist at Unscrambl, Inc. We're a kick-ass startup where each of us give it our best to bring real-time, streaming, intelligent analytics to different verticals including telecommunications, healthcare, and banking. I use statistics and machine learning to solve our customer's analytics problems, and incorporating predictive models in Unscrambl's flagship product, *Drive*. Being a jack of all trades, I also build front-end applications, dashboards and visualisations to help our customers interact with our data products. You do need good storytelling for good data. ;)
+I currently live in Pune, working as a Data Scientist at Unscrambl, Inc, where I lead the Chatbot development team! We're a kick-ass startup where each of us give it our best to bring real-time, streaming, intelligent analytics to different verticals including telecommunications, healthcare, and banking. When I'm not trying to build the world from the move _Her_, I use statistics and machine learning to solve our customer's analytics problems, and incorporate predictive models in Unscrambl's flagship product, *Drive*. Being a jack of all trades, sometimes I also build front-end applications, dashboards and visualisations to help our customers interact with our data products. You do need good storytelling for good data. ;)
 
 In the past I've worked as a Technical Lead in a service oriented startup, <em>Energy Umpire</em> based in Melbourne, Victoria.
 
 So yeah, I have my fair share of startup experience, and the usual get sh*t done attitude that comes with it.
 
-I'm also <em>really</em> into indie rock, creative writing, travelling, and caffeine. I cycle between other hobbies as well, with the change of seasons.
+I'm also <em>really</em> into indie rock, creative writing, travelling, and caffeine. I cycle between other hobbies as well, with the change of seasons. Also trying to learn German (the language, not the person) and how to play the guitar! I like learning! 
 
 <hr>
 
